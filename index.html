@@ -1,14 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Iffy</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="icon" href="https://fav.farm/🔥">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  
+    <main>
+      <h1>Iffy</h1>
+      <img id='image' src="https://fastly.picsum.photos/id/343/200/300.jpg?hmac=_7ttvLezG-XONDvp0ILwQCv50ivQa_oewm7m6xV2uZA" alt="image displayed because not github pages"> 
+      <script>
+        let image = document.getElementById("image");
+        if (window.location.host.includes("github.io")) {
+          image.src = "https://picsum.photos/id/200/200/300"
+          image.alt = "image display because ON github pages"
+        }
+      </script>
+    </main>
   </body>
 </html>
